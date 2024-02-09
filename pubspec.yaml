@@ -1,0 +1,58 @@
+name: shipora_1
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment: 
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies: 
+  cupertino_icons: ^1.0.2
+  get: 4.6.6
+  flutter: 
+    sdk: flutter
+  flutter_screenutil: ^5.9.0
+  flutter_local_notifications: ^16.3.2
+  firebase_core: ^2.25.3
+  firebase_messaging: ^14.7.14
+  pinput: ^3.0.1
+  country_pickers: ^2.0.0
+  flutter_svg: ^2.0.9
+  get_storage: ^2.1.1
+  firebase_crashlytics: ^3.4.13
+  google_fonts: ^6.1.0
+  dio: ^5.4.0
+  retrofit: ^4.1.0
+  json_annotation: ^4.8.1
+  logger: any
+
+dev_dependencies: 
+  flutter_lints: ^2.0.0
+  retrofit_generator: '>=7.0.0 <8.0.0'
+  build_runner: '>=2.3.0 <4.0.0'
+  json_serializable: ^6.6.2
+  flutter_native_splash: ^2.3.10
+  flutter_test: 
+    sdk: flutter
+
+flutter: 
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/icons/
+    - assets/icons/drawer/
+    - assets/illustrations/
+
+flutter_gen:
+  integrations:
+    flutter_svg: true
+  colors:
+    inputs:
+      - assets/color/colors.xml
+    enabled: true
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  ios: false
+  android: true
+  android_12:
+    image: assets/logo_splash.png
